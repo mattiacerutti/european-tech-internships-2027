@@ -43,6 +43,7 @@ jobs:
         env:
           INTERNSHIPS_DATABASE_URL: sqlite:///data/ci.db
         run: |
+          mkdir -p data
           uv run alembic upgrade head
           uv run internships render
           uv run internships validate
