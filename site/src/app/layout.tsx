@@ -50,6 +50,11 @@ export default function RootLayout({children}: Readonly<{children: ReactNode}>) 
         <Script id="theme-init" strategy="beforeInteractive">
           {themeScript}
         </Script>
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="e3733fba-21a0-4663-9e54-9e6adab3e0d5"
+        />
       </head>
       <body>{children}</body>
     </html>
